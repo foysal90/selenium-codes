@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="new_maven(failed)">
+    <classes>
+      <class name="assignments.assignment">
+        <methods>
+          <include name="loginInvalid"/>
+        </methods>
+      </class> <!-- assignments.assignment -->
+    </classes>
+  </test> <!-- new_maven(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

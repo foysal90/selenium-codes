@@ -35,16 +35,20 @@ public class dragDrop {
           WebElement dest = driver.findElement(By.id("droppable"));
 
           Actions act = new Actions(driver);
+        //using click and hold method
+//          act.clickAndHold(src).pause(Duration.ofSeconds(3)).moveToElement(dest)
+//          .pause(Duration.ofSeconds(2))
+//          .release()
+//          .build().perform();
+//          Thread.sleep(2000);
+//          driver.quit();
 
 
         //using drag and drop method
-//          act.dragAndDrop(src, dest).perform();
-        act.dragAndDrop(src,dest);
+         act.dragAndDrop(src, dest).perform();
+        //act.dragAndDrop(src,dest);
 
-        //using click and hold method
-          act.clickAndHold(src).pause(Duration.ofSeconds(3)).moveToElement(dest).pause(Duration.ofSeconds(2)).release().build().perform();
-          Thread.sleep(2000);
-          driver.quit();
+
 
 
 

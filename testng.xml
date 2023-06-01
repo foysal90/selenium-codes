@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/Users/rehanabegom/Desktop/new_maven/src/main/java/practiseCode">
+<suite name="All Test Suite" parallel="methods" thread-count="3">
+    <test name="failTest">
+        
         <classes>
-            <class name="practiseCode.webdriverWait">
+            <class name="islahiArt.islahiFailedTest">
                 <methods>
-                    <include name="test"/>
+                    <include name="test1"/>
                 </methods>
             </class>
-            <class name="practiseCode.webdriverWait2">
-                <methods>
-                    <include name="demo"/>
-                </methods>
-            </class>
+
+
+
         </classes>
+
     </test>
 </suite>

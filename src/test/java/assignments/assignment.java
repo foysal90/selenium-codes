@@ -32,7 +32,7 @@ public class assignment {
         driver.findElement(By.xpath("//input[@placeholder='Enter Password']")).sendKeys("123456");
         driver.findElement(By.xpath("//button[text()='Sign in']")).click();
         Thread.sleep(2000);
-        String err = driver.findElement(By.className("errorMessage")).getText();git
+        String err = driver.findElement(By.className("errorMessage")).getText();
 
         System.out.println("error :" +err);
 

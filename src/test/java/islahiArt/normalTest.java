@@ -88,10 +88,10 @@ public class normalTest extends basicIslahi {
             }
         }
 
-
-        driver.findElement(By.xpath("(//a[@id='plus_qty'])[5]")).click();
-        library.screenshot(driver);
-        Thread.sleep(1000);
+//
+//        driver.findElement(By.xpath("//a[@id='plus_qty']")).click();
+//        library.screenshot(driver);
+//        Thread.sleep(1000);
         driver.findElement(By.xpath("//button[@type='submit'and normalize-space()='Add to cart']")).click();
         library.screenshot(driver);
         Thread.sleep(2000);

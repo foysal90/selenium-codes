@@ -178,31 +178,31 @@ public class normalTest extends basicIslahi {
 
 
     }
+//    @Test (dependsOnMethods = {"details"})
+//    void payment_info() throws InterruptedException {
+//        driver.findElement(By.xpath("(//input[@id='shipping_method_0_printify_shipping_e'])[1]")).click();
+//        library.screenshot(driver);
+//        Thread.sleep(2000);
+//        WebElement frame = driver.findElement(By.xpath("//iframe[@title='Secure card payment input frame']"));
+//        library.screenshot(driver);
+//        driver.switchTo().frame(frame);
+//        Thread.sleep(5000);
+//
+//        driver.findElement(By.xpath("//input[@name='cardnumber']")).sendKeys("374245455400126");
+//        library.screenshot(driver);
+//        Thread.sleep(2000);
+//        driver.findElement(By.name("exp-date")).sendKeys("05 27");
+//        library.screenshot(driver);
+//        Thread.sleep(2000);
+//
+//        driver.findElement(By.name("cvc")).sendKeys("1021");
+//        library.screenshot(driver);
+//        Thread.sleep(2000);
+//        driver.switchTo().defaultContent();
+//        library.screenshot(driver);
+//        Thread.sleep(5000);
+//    }
     @Test (dependsOnMethods = {"details"})
-    void payment_info() throws InterruptedException {
-        driver.findElement(By.xpath("(//input[@id='shipping_method_0_printify_shipping_e'])[1]")).click();
-        library.screenshot(driver);
-        Thread.sleep(2000);
-        WebElement frame = driver.findElement(By.xpath("//iframe[@title='Secure card payment input frame']"));
-        library.screenshot(driver);
-        driver.switchTo().frame(frame);
-        Thread.sleep(5000);
-
-        driver.findElement(By.xpath("//input[@name='cardnumber']")).sendKeys("374245455400126");
-        library.screenshot(driver);
-        Thread.sleep(2000);
-        driver.findElement(By.name("exp-date")).sendKeys("05 27");
-        library.screenshot(driver);
-        Thread.sleep(2000);
-
-        driver.findElement(By.name("cvc")).sendKeys("1021");
-        library.screenshot(driver);
-        Thread.sleep(2000);
-        driver.switchTo().defaultContent();
-        library.screenshot(driver);
-        Thread.sleep(5000);
-    }
-    @Test (dependsOnMethods = {"details","payment_info"})
     void place_order() throws InterruptedException {
         JavascriptExecutor js = (JavascriptExecutor)driver;
         Thread.sleep(2000);
